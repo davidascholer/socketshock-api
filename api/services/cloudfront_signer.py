@@ -6,7 +6,7 @@ from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import padding
 from botocore.signers import CloudFrontSigner
 
-from django_api.settings import CLOUDFROND_KEY_ID, CLOUDFRONT_URL, CLOUDFRONT_SECRET
+from socketshock_api.settings import CLOUDFROND_KEY_ID, CLOUDFRONT_URL, CLOUDFRONT_SECRET
 
 def rsa_signer(message):
     key_id = CLOUDFRONT_SECRET.encode()
